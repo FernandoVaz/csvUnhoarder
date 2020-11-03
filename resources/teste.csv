@@ -4,3 +4,22 @@ id,name,email,country,age
 102,Jovan Lee,jovan@example.com,FR,25
 103,Greg Hover,greg@example.com,US,45
 104,FV, fv@exemple.com,BR,29
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
